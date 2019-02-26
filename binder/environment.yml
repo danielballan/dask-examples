@@ -19,6 +19,8 @@ dependencies:
   - xarray
   - bottleneck
   - py-xgboost
+  - trackpy
+  - scikit-image
   - pip:
     - graphviz
     - dask_xgboost
