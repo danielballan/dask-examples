@@ -51,10 +51,12 @@ nbsphinx_prolog = """
 
 .. admonition:: Live Notebook
 
-    You can run this notebook in a `live session <https://mybinder.org/v2/gh/dask/dask-examples/master?urlpath=lab/tree/{{ docname }}>`_ |Binder| or view it `on Github <https://github.com/dask/dask-examples/blob/master/{{ docname }}>`_.
+    You can run this notebook in a `live session
+    <https://mybinder.org/v2/gh/dask/dask-examples/master?urlpath=lab/tree/{{ docname | urlencode }}>`_ |Binder| or view it `on Github <https://github.com/dask/dask-examples/blob/master/{{ docname | urlencode }}>`_.
 
 .. |Binder| image:: https://mybinder.org/badge.svg
-   :target: https://mybinder.org/v2/gh/dask/dask-examples/master?urlpath=lab/tree/{{ docname }}
+   :target:
+   https://mybinder.org/v2/gh/dask/dask-examples/master?urlpath=lab/tree/{{ docname | urlencode }}
 """
 
 nbsphinx_epilog = """
